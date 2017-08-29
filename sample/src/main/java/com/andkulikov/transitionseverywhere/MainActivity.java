@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements ListFragment.Samp
 
     @Override
     public int getSampleCount() {
-        return 13;
+        return 14;
     }
 
     @Override
@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements ListFragment.Samp
             case 10: return "Change text transition";
             case 11: return "Custom transition";
             case 12: return "Scene to scene transitions";
+            case 13: return "Custom Text transition";
         }
         return null;
     }
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements ListFragment.Samp
             case 10: return new ChangeTextSample();
             case 11: return new CustomTransitionSample();
             case 12: return new ScenesSample();
+            case 13: return new VertivalChangeTextSample();
         }
         return null;
     }
